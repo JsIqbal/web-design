@@ -1,0 +1,173 @@
+/* start of common css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    width: 1140px;
+    margin: 0 auto;
+} */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover,a:focus{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+/* end of common css */
+/* start of header section */
+.header{
+    text-align: right;
+    background: rgb(121 82 179);
+}
+.header .logo{
+    float: left;
+}
+.header .logo a img{
+    height: 80px;
+    width: 200px;
+}
+.header .nav{
+    float: left;
+    padding:14px 25px;
+}
+.header .nav ul li{
+    margin-right: 40px;
+}
+.header .nav ul li .item{
+    position: relative;
+    padding-bottom: 5px;
+    color: rgb(244 244 244);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.header .nav ul li .item::after{
+    position: absolute;
+    content: ' ';
+    bottom: 0;
+    left: 0;
+    transition: all linear .2s;
+    height: 1px;
+    width: 10%;
+    background: rgba(244, 244, 244,50%);
+
+}
+.header .nav ul li .item:hover::after{
+    width: 100%;
+}
+.header .buttons{
+    float: right;
+    padding: 21px 0;
+}
+.header .buttons .button{
+    margin: 0 10px;
+    float: left;
+    border-radius: 5px;
+    color: rgb(244 244 244);
+    padding: 7px 25px;
+    transition: all linear .3s;
+    box-shadow: inset 0px 0px 25px -1px rgba(0,0,0,2);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.header .buttons .button:hover{
+    background: rgba(0, 0, 0,0.2);
+}
+/* end of header section */
+/* start of banner section */
+.banner{
+    background: #402C5C;
+}
+.banner .sedule{
+    width: 50%;
+    float: left;
+    padding: 155px 0;
+}
+.banner .sedule .title h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    color: #f4f4f4;
+}
+.banner .sedule .title p{
+    width: 77%;
+    color: #f4f4f4;
+}
+.mb-3{
+    margin-top: -1px;
+    width: 70%;
+    float: left;
+    -webkit-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px 0px 40px 0px rgba(0,0,0,0.3);
+    margin-bottom: 0!important;
+}
+.banner .sedule form{
+    margin-top: 20px;
+}
+.banner .sedule form button{
+    border: none;
+    padding: 18px 20px;
+    text-transform: capitalize;
+    background: #7952B3;
+    color: #f4f4f4;
+    border-radius: 0px 5px 5px 0px;
+    transition: all linear .3s;
+}
+.banner .sedule form button:hover{
+    background: #f4f4f4;
+    color: #7952B3;
+}
+.input-group>.form-control{
+    padding: 30px 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+.input-group>.input-group-append>.btn{
+    padding: 0 25px;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 0;
+    background: #7753A9;
+    color: #f4f4f4;
+}
+.input-group>.input-group-append>.btn i{
+    color: #f4f4f4;
+}
+.banner .images{
+    width: 50%;
+    float: left;
+    text-align: end;
+    position: relative;
+    /* background: url(../images/circle-6.png)
+;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center; */
+}
+.banner .images .image img{
+    width: 100%;
+    padding: 20px 0 0 0;
+    filter: drop-shadow(2px 4px 6px black);;
+}
+.banner .images .image2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner .images .image2 img{
+    filter: drop-shadow(2px 4px 6px black);
+    width: 150%;
+    z-index: -8;
+}
+/* end of banner section */

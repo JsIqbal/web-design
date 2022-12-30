@@ -1,0 +1,683 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width: 1170px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0l
+}
+h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(53 53 53);
+}
+p{
+    color: rgb(119 119 119);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+ul,ol{
+    margin:0;
+    padding:0;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+.clr{
+    clear:both;
+}
+/* end of common css */
+/* start of header section */
+.header{
+    background: url(../images/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay{
+    background: rgba(0, 0, 0,0.7);
+    padding-top: 30px;
+    height: 700px;
+}
+.header .navbar{
+    background: transparent!important;
+    padding: 30px 0 100px 0;
+}
+.header .navbar .navbar-nav{
+    margin-left: 55px;
+}
+.header .navbar .navbar-nav li a{
+    color: rgb(253 253 254)!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 0 20px!important;
+    line-height: 30px;
+    height: 31px;
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+.header .navbar .navbar-nav li .menu-items:hover{
+    color: rgb(116 79 160)!important;
+}
+.header .navbar .navbar-nav li .menu-items::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 1px;
+    width: 15px;
+    background: rgb(116 79 160);
+    opacity: 0;
+    transition: all .3s;
+}
+.header .navbar .navbar-nav li .menu-items:hover::after{
+    opacity: 1;
+}
+.header .navbar .navbar-nav li .primary-btn{
+    background: rgb(116 79 160)!important;
+    padding: 0 20px!important;
+}
+.header .navbar .navbar-nav li .primary-btn:hover{
+    color: rgb(116 79 160)!important;
+    background-color: rgb(245 245 245)!important;
+}
+.header .navbar ul .dropdown-box{
+    position: relative;
+    transition: all ease-in-out .3s;
+}
+.header .navbar ul .dropdown-box .dropdown{
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+    visibility: hidden;
+    transition: all ease-in-out .3s;
+    background: rgb(53 53 53);
+    opacity: 0;
+    padding: 5px 0;
+}
+.header .navbar ul .dropdown-box:hover .dropdown{
+    visibility: visible;
+    bottom: -105px;
+    z-index: 5;
+    opacity: 1;
+}
+.header .navbar ul .dropdown-box .dropdown li a:hover{
+    color: rgb(116 79 160)!important;
+    background-color: rgb(245 245 245);
+    transition: all ease-in-out .3s;
+}
+.header .banner-details h2{
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    line-height:40px;
+}
+.header .banner-details h3{
+    font-size: 36px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    padding: 12px 0 25px 0;
+}
+.header .banner-details h3:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	height: 1px;
+	background: #f1f1f1;
+}
+.header .banner-details .details{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(241 241 241);
+    font-size: 14px;
+    padding: 22px 0 50px 0;
+    line-height: 24px;
+}
+.header .banner-details .a{
+    color: rgb(116 79 160)!important;
+    margin-right: -10px;
+}
+.header .banner-details a .button{
+    height: 60px;
+    width: 190px;
+    background: rgb(241 241 241);
+    padding: 10px 0;
+    border-radius: 5px;
+    float: right;
+    margin-left: 10px;
+    transition: all .3s;
+}
+.header .banner-details a .button p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(53 53 53);
+    float: left;
+    line-height: 1;
+}
+.header .banner-details a .button p span{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(53 53 53);
+    padding-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+.header .banner-details a .button i{
+    float: left;
+    width: 55px;
+    height: 100%;
+    font-size: 33px;
+    color: rgb(53 53 53);
+    text-align: center;
+    line-height: 1.2;
+}
+.header .banner-details a .button:hover{
+    color: rgb(241 241 241)!important;
+    background: rgb(116 79 160)!important;
+}
+.header .banner-details a .button:hover i{
+    color: rgb(241 241 241)!important;
+}
+.header .banner-details a .button:hover p{
+    color: rgb(241 241 241)!important;
+}
+.header .banner-details a .button:hover p span{
+    color: rgb(241 241 241)!important;
+}
+/* end of header section */
+/* start of about section */
+.about{
+    padding-top: 95px;
+    background: rgb(255 255 255);
+    padding-bottom: 60px;
+}
+.about .about-image img{
+    width: 100%;
+}
+.details h2{
+    color: rgb(53 53 53);
+    font-size: 24px;
+    font-family: Raleway;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 49px;
+    padding-bottom: 28px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.details h2::after{
+    position: absolute;
+    content: ' ';
+    height: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/subtitle-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+}
+.details p{
+    padding: 0 100px 20px 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: rgb(119 119 119);
+    line-height: 24px;
+    font-size: 14px;
+}
+/* end of about section */
+/* start of features section */
+.features{
+    background: rgb(241 241 241);
+    padding: 56px 0 40px 0;
+}
+.features ul li{
+    border-bottom: 1px solid rgb(53 53 53);
+    padding: 20px 0;
+    margin: 0 75px 0 0;
+    transition: all .3s;
+    background: transparent;
+}
+.features ul li:hover{
+    margin-right: 0;
+    border-color: rgb(116 79 160);
+}
+.features .icons i{
+    padding-right: 10px;
+    color: rgb(53 53 53);
+    font-size: 42px;
+    transition: all .3s;
+}
+.features ul li:hover .icons i{
+    color: rgb(116 79 160);
+}
+.features .icon-details h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(53 53 53);
+    transition: all .3s;
+}
+.features ul li:hover .icon-details h4{
+    color: rgb(116 79 160);
+}
+.features .icon-details p{
+    padding-bottom: 17px;
+    line-height: 24px;
+}
+.features ul li:hover .icon-details p{
+    color: rgb(116 79 160);
+}
+.features .features-details p{
+    padding-bottom: 17px;
+    line-height: 24px;
+}
+.features .features-details h3{
+    margin-bottom: 30px;
+}
+/* end of features section */
+/* start of screenshot section */
+.screenshot{
+    padding: 95px 0;
+    background: rgb(255 255 255);
+}
+.screenshot img{
+    width: 100%;
+}
+.inputs {
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+.inputs ul li{
+    display: inline-block;
+}
+.inputs ul li a:hover{
+    border: 3px solid #744fa0;
+}
+.inputs ul li a{
+    position: relative;
+    transition: all linear .3s;
+    list-style: none;
+    border: 3px solid rgb(51 51 51);
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+}
+.inputs ul li a::after{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all linear .2s;
+    transform: translate(-50%,-50%);
+    background: rgb(0 0 0 / 0%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.inputs ul li a:hover::after{
+    background: rgb(116 79 160);
+}
+/* end of screenshot section */
+/* start of video section */
+.video{
+    background: url(../images/video_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.video-overlay{
+    background: rgba(0, 0, 0,0.7);
+}
+.video .play-button{
+    padding: 194px 0;
+    text-align: center;
+}
+.video .play-button a i{
+    color: rgb(254 255 255);
+    font-size: 80px;
+    transition: all .3s;
+}
+.video .play-button a i:hover{
+    color: rgb(116 79 160);
+}
+/* end of video section */
+/* start of pricing section */
+.pricing{
+    padding-top: 65px;
+    background: rgb(255 255 255);
+}
+.pricing-box{
+    border-radius: 15px;
+    border: 1px solid rgb(241 241 241);
+    margin-bottom: 18px;
+    position: relative;
+}
+.box-heading{
+    background: rgb(241 241 241);
+    padding: 19px 0;
+    border-radius: 15px 15px 0 0;
+    transition: all .3s;
+}
+.pricing-box:hover .box-heading{
+    background: rgb(116 79 160);
+}
+.pricing-box:hover .box-heading h3{
+    color: rgb(255 255 255);
+}
+.box-body .month{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid rgb(241 241 241);
+    margin: 20px auto;
+    text-align: center;
+}
+.box-body .month .month-details{
+    position: relative;
+    top: 50%;
+    transform: translateY(-58%);
+}
+.month .month-details h4{
+    color: rgb(53 53 53);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.month .month-details h4 span{
+    font-size: 47px;
+}
+.month .month-details p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(85 85 85);
+}
+.pricing .box-details{
+    padding: 30px 0 40px;
+    background: rgb(241 241 241);
+    border-radius: 0 0 15px 15px;
+}
+.pricing .box-details p{
+    color: rgb(85 85 85);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.pricing .pricing-button{
+    padding: 0 20px;
+    line-height: 34px;
+    border: 1px solid rgb(53 53 53);
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(53 53 53);
+    position: absolute;
+    bottom: -15px;
+    transition: all .3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pricing-box:hover .pricing-button{
+    background: rgb(116 79 160);
+    color: rgb(255 255 255);
+}
+/* end of pricing section */
+/* start of team section */
+.team{
+    padding-top: 95px;
+    background: rgb(255 255 255);
+    padding-bottom: 95px;
+}
+.team .team-member{
+    height: auto;
+    width: 100%;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    margin: 170px 0;
+    transition: all .3s;
+}
+.team .team-member:hover{
+    margin-top: 85px;
+}
+.team .team-member .team-inside{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.team-inside .lay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgb(0 0 0 / 50%);
+    border-radius: 15px 15px 0 0;
+    opacity: 0;
+    transition: all .3s;
+}
+.team-member:hover .team-inside .lay{
+    opacity: 1;
+}
+.team-inside .lay ul{
+    padding: 155px 0;
+}
+.team-inside .lay ul li a{
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 50px;
+    background: rgb(255 255 255);
+    color: rgb(51 51 51);
+    transition: all linear .3s;
+    line-height: 2;
+    font-size: 24px;
+}
+.team-inside .lay ul li a:hover{
+    background: rgb(116 79 160);
+    color: #fff;
+}
+.team-inside .lay ul li{
+    list-style: none;
+    display: inline-block;
+}
+.team .team-member .team-inside img{
+    width: 100%;
+    border-radius: 15px;
+}
+.team .team-member .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 29px 0;
+    height: 170px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    border-left: 1px solid rgb(204 204 204);
+    border-bottom: 1px solid rgb(204 204 204);
+    border-right: 1px solid rgb(204 204 204);
+    border-radius: 0 0 15px 15px;
+    transition: all .3s;
+}
+.team .team-member:hover .caption{
+    transform: translateY(100%);
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+.team .team-member .caption h2{
+    color: rgb(53 53 53);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.team .team-member .caption h3{
+    color: rgb(153 153 153);
+    font-size: 15px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    padding: 8px 0 10px 0;
+    text-transform: capitalize;
+}
+.team .team-member .caption p{
+    color: rgb(119 119 119);
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    padding: 0 52px;
+}
+/* end of team section */
+/* start of feedback section */
+.feedback{
+    background: url(../images/feedback_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.feedback .feedback-overlay{
+    padding: 50px 0 10px 0;
+    background: rgb(0 0 0 / 70%);
+}
+.feedback .the-details{
+    background: rgb(241 241 241);
+    padding: 25px;
+    border-radius: 10px;
+}
+.the-details p{
+    color: rgb(119 119 119);
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    padding: 0 47px;
+    line-height: 24px;
+}
+.the-details ul{
+    padding: 20px 0 5px 0;
+}
+.the-details ul li i{
+    color: rgb(116 79 160);
+    font-size: 14px;
+}
+.the-details .user{
+    padding: 4px 0;
+}
+.feedback .feedback-details ul li{
+    list-style: none;
+    display: inline-block;
+}
+.main-detail-downlow{
+    position: absolute;
+    bottom: -107px;
+    font-size: 70px;
+    color: rgb(241 241 241);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-box{
+    text-align: center;
+    padding: 60px 0 30px 0;
+}
+.image-box img{
+    border: 2px solid #744fa0;
+    transform: scale(1.3);
+    border-radius: 50%;
+}
+.feedback .inputs ul li a{
+    border: 3px solid #fff;
+}
+/* end of feedback section */
+/* start of messege section */
+.messege{
+    padding-top: 95px;
+    background: rgb(255 255 255);
+    padding-bottom: 100px;
+}
+.messege .form-control{
+    margin-bottom: 30px;
+    height: 50px;
+    border-color: rgb(53 53 53);
+    color: rgb(85 85 85);
+    font-family: 'Open sans', sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.messege .form-control:focus{
+    box-shadow: none;
+}
+.messege .main-input{
+    height: 200px !important;
+}
+.messege form{
+    width: 100%;
+}
+.messege form .btn{
+    border-radius: 3px;
+    height: 33px;
+    line-height: 32px;
+    padding: 0;
+    width: 88px;
+    background: rgb(116 79 160);
+    color: rgb(254 254 254);
+    font-size: 18px;
+    transition: all .3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border: 1px solid rgb(0 0 0 / 0%);
+}
+.messege form .btn:hover{
+    background: rgb(255 255 255);
+    color: rgb(116 79 160);
+    border-color: rgb(116 79 160);
+}
+/* end of messege section */
+/* start of footer section */
+.footer{
+    background: rgb(53 53 53);
+    padding: 30px 0;
+}
+.footer-icon{
+    padding: 30px 0;
+}
+.footer-icon a{
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 50px;
+    background: rgb(255 255 255);
+    color: rgb(51 51 51);
+    transition: all linear .3s;
+    line-height: 2;
+    font-size: 24px;
+}
+.footer-icon a:hover{
+    background: rgb(116 79 160);
+    color: rgb(255 255 255);
+}
+.footer-bottom p span{
+    color: rgb(116 79 160);
+}
+/* end of footer section */

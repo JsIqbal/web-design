@@ -1,0 +1,901 @@
+/* start of common css */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+/* end of common css */
+/* start of header section */
+.header{
+    background: rgb(255 255 255);
+}
+.navbar{
+    background: rgb(255 255 255)!important;
+    padding: 15px 0;
+}
+.navbar .navbar-nav .nav-link{
+    color: rgb(21 21 21);
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    transition: all linear .3s;
+}
+.navbar .navbar-nav .nav-link:hover{
+    
+    color: rgb(73 77 161);
+
+}
+.navbar .navbar-nav .dropdown .drop-menu{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 170px;
+    text-align: left;
+    transition: all linear .4s;
+    background: rgb(255 255 255);
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+}
+.navbar .navbar-nav .dropdown:hover .drop-menu{
+    top: 60px;
+    visibility: visible;
+    opacity: 1;
+}
+.navbar .search span img{
+    margin: -4px 0 0 20px;
+    position: relative;
+}
+.navbar .search a{
+    color: rgb(178 178 178)!important;
+    padding-right: 20px;
+    font-size: 18px;
+    position: relative;
+}
+.navbar .search a:after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 18px;
+    top: 4px;
+    right: 0;
+    background: rgb(178 178 178);
+}
+/* end of header section */
+/* start of banner section */
+.banner{
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 20px;
+    color: rgb(255 255 255);
+}
+.banner .overlay{
+    background: rgba(0, 0, 0,0.7);
+    padding: 200px 0;
+}
+.banner h4{
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-weight: 400;
+    color: rgb(255 255 255);
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+.banner h3{
+    font-size: 32px;
+    font-weight: 300;
+    color: rgb(255 255 255);
+    letter-spacing: 4px;
+    padding-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner p{
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner .button a{
+    padding: 16px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(73 77 161);
+    color: rgb(255 255 255);
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all linear .3s;
+}
+.banner .button a:hover{
+    background: rgb(39 45 195);
+}
+/* end of banner section */
+/* start of creative partner section */
+.partner{
+    margin-top: -180px;
+    margin: 0 20px;
+}
+.partner .special{
+    padding: 0 30px 0 0;
+}
+.partner .cre-image{
+    background: rgb(241 241 241);
+    margin: -180px 20px 0 20px;
+}
+.partner .cre-image img{
+    width: 100%;
+}
+.partner .cre-image{
+    position: relative;
+    margin: -180px 40px 0 0px;
+}
+.partner .cre-image .play{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(0 0 0 / 30%);
+
+}
+.partner .cre-image .play i{
+    color: rgb(255 255 255);
+    padding: 24px 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all linear .3s;
+    background: rgb(255 91 91);
+    transform: translate(-50%, -50%);
+}
+.partner .cre-image .play i:hover{
+    background: rgb(73 77 161);
+}
+.partner .special-2{
+    padding: 0 0 0 30px;
+}
+.partner .down{
+    float: right;
+    margin-top: 82px;
+}
+.partner .image{
+    margin-bottom: 20px;
+}
+.partner .image a img{
+    width: 100%;
+}
+.partner .image a{
+    filter: grayscale(1);
+    transition: all linear .3s;
+}
+.partner .image a:hover{
+    filter: grayscale(0);
+}
+/* end of creative partner section */
+/* start of about section */
+.about{
+    margin: 85px 0;
+}
+.about .left{
+    margin-top: 20px;
+}
+.about .left .image{
+    text-align: left;
+}
+.about .left .image img{
+    width: 100%;
+}
+.about .left .details h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119 119 119);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+.about .left .details h2{
+    font-weight: 600;
+    color: rgb(21 21 21);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+.about .left .details p{
+    color: rgb(34 34 34);
+    padding-bottom: 25px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.about .left .details .button{
+    padding: 45px 0 75px 0;
+}
+.about .left .details .button a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(73 77 161);
+    text-transform: capitalize;
+    border: 1px solid rgb(73 77 161);
+    padding: 10px 20px;
+    border-radius: 35px;
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.about .left .details .button a:hover{
+    background: rgb(43 49 180);
+    color: rgb(255 255 255);
+}
+.about .left .image2{
+    text-align: right;
+}
+.about .left .image2 img{
+    width: 100%;
+}
+
+/* end of about section */
+/* start of service section */
+.service{
+
+}
+.service .detail-part h3{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119 119 119);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+.service .detail-part h2{
+    font-weight: 600;
+    color: rgb(21 21 21);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+.service .detail-part p{
+    color: rgb(68 68 68);
+    line-height: 24px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.service .detail-part a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(73 77 161);
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.service .detail-part a:hover{
+    color: rgb(39 45 195);
+}
+.service .detail-part a i{
+    padding: 0px 0 0 20px;
+}
+.service .sli-down{
+    margin-top: 20px;
+}
+.service .box-part .box{
+    background: rgb(255 247 216);
+    text-align: center;
+    padding: 60px 0 60px 0;
+    transition: all linear.3s;
+    margin-bottom: 22px;
+}
+.service .box-part .box:hover{
+    filter: drop-shadow(0px 2px 5px rgba(98, 98, 113, 0.43));
+}
+.service .box-part .box .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(255 255 255);
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    filter: drop-shadow(0px 2px 5px rgba(98, 98, 113, 0.43));
+}
+.service .box-part .box .title h3{
+    color: rgb(21 21 21);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.service .box-part .box .title p{
+    color: rgb(68 68 68);
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+/* end of service section */
+/* start of portfolio section */
+.portfolio{
+
+}
+.portfolio .heading{
+
+}
+.portfolio .heading h3{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119 119 119);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+.portfolio .heading h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(21 21 21);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.portfolio .title{
+    padding-bottom: 25px;
+    display: flex;
+}
+/* .portfolio .title-right{
+    float: right;
+} */
+.portfolio .title ul li{
+    list-style: none;
+    display: inline-block;
+}
+.portfolio .title ul li a{
+    margin-right: 25px;
+    color: rgb(68 68 68);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all linear .3s;
+}
+.portfolio .title ul li a:hover{
+    color: rgb(73 77 161);
+}
+.portfolio .images .image{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.portfolio .images .image img{
+    width: 100%;
+}
+.portfolio .images .image:hover .lay{
+    opacity: 1;
+    height: 100%;
+}
+.portfolio .images .image:hover .lay .icon{
+    margin: 135px 0px;
+}
+.portfolio .images .image .lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 0%;
+    opacity: 0;
+    transition: all linear .3s;
+    width: 100%;
+    background: rgba(0, 0, 0,0.7);
+}
+.portfolio .images .image .lay .icon{
+    margin: 0px 0px;
+    transition: all linear .3s;
+}
+.portfolio .images .image .lay .icon a{
+    padding: 10px 13px;
+    background: #ffffff;
+    border-radius: 50%;
+
+}
+.portfolio .images .image .lay .icon i{
+    /* padding: 12px 12px;
+    background: rgb(255 0 0);
+    border-radius: 50%; */
+}
+.portfolio .images .image .lay .detail ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 5px;
+    color: rgb(255 255 255);
+    font-size: 14px;
+    font-weight: 400;
+}
+.portfolio .images .image img{
+    width: 100%;
+}
+.portfolio .button{
+    text-align: center;
+    padding: 60px 0 80px 0;
+}
+.portfolio .button a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(73 77 161);
+    text-transform: capitalize;
+    border: 1px solid rgb(73 77 161);
+    padding: 10px 20px;
+    border-radius: 35px;
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.portfolio .button a:hover{
+    background: rgb(43 49 180);
+    color: rgb(255 255 255);
+}
+/* end of portfolio section */
+/* start of count section */
+.count{
+    background: rgb(30 30 30);
+    padding: 60px 0;
+    margin-bottom: 100px;
+}
+.count .main .box{
+    margin-bottom: 20px;
+}
+.count .main .box h2{
+    font-size: 42px;
+    color: rgb(255 255 255);
+    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
+}
+.count .main .box h3{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255 255 255);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+/* end of count section */
+/* start of team section */
+.team{
+
+}
+.team .title{
+
+}
+.team .title h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119 119 119);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+.team .title h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(21 21 21);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.team .box{
+    margin-bottom: 20px;
+    background: rgb(241 241 241);
+    transition: all linear .3s;
+}
+
+.team .box:hover{
+    filter: drop-shadow(0px 2px 5px rgba(98, 98, 113, 0.43));
+}
+.team .box:hover .detail .all h3{
+    color:rgb(73 77 161);
+}
+.team .box .image{
+
+}
+.team .box .image img{
+    width: 100%;
+}
+.team .box .detail{
+    width: 55%;
+    float: left;
+}
+.team .box .detail .all{
+    padding: 0 25px;
+}
+.team .box .detail h3{
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(21 21 21);
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.team .box .detail h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(68 68 68);
+    padding-top: 7px;
+    font-family: 'Open Sans', sans-serif;
+}
+.team .box .detail p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(68 68 68);
+    padding-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.team .box .detail ul{
+    padding: 15px 0 0 0;
+}
+.team .box .detail ul li{
+    list-style: none;
+    display: inline-block;
+}
+.team .box .detail ul li a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(68 68 68);
+    font-size: 20px;
+    margin-right: 5px;
+    transition: all linear .3s;
+}
+.team .box .detail ul li a i:hover{
+    background: rgb(73 77 161);
+    color: rgb(255 255 255);
+}
+.team .button{
+    text-align: center;
+    padding: 0px 0 60px 0;
+    margin-top: 50px;
+}
+.team .button a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffff;
+    text-transform: capitalize;
+    background: rgb(73 77 161);
+    padding: 10px 20px;
+    border-radius: 35px;
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.team .button a:hover{
+    background: rgb(43 49 180);
+}
+/* end of team section */
+/* start of testimonial section */
+.testimonial{
+
+}
+.testimonial .main{
+    padding-bottom: 100px;
+}
+.testimonial .main .details{
+    margin: 20px 0;
+}
+.testimonial .main .details h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119 119 119);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 0 10px 0;
+}
+.testimonial .main .details h2{
+    font-weight: 600;
+    color: rgb(21 21 21);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .main .details p{
+    color: rgb(68 68 68);
+    line-height: 24px;
+    padding-bottom: 30px;
+    padding-right: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .main .details a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(73 77 161);
+    text-transform: capitalize;
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .main .details a:hover{
+    color: rgb(39 45 195);
+}
+.testimonial .main .details a i{
+    padding: 0px 0 0 20px;
+}
+.testimonial .main .box{
+    background: rgb(241 241 241);
+    filter: drop-shadow(0px 2px 5px rgba(98, 98, 113, 0.43));
+}
+.testimonial .main .box .image img{
+    width: 100%;
+}
+.testimonial .main .box .title{
+    text-align: center;
+    background: rgb(73 77 161);
+    padding: 8px 10px;
+}
+.testimonial .main .box .title h3{
+
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255 255 255);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .main .box .title h4{
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .main .box .box-details .about{
+    padding: 30px 0;
+}
+.testimonial .main .box .box-details .about p{
+    font-size: 14px;
+    color: rgb(68 68 68);
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .main .box .box-details .sign h3{
+
+    margin-right: 50px;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+/* end of testimonial section */
+/* start of blog sction */
+.blog .title h3{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119 119 119);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+.blog .title h2{
+    font-weight: 600;
+    color: rgb(21 21 21);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+.blog-item .blog-image{
+    position: relative;
+}
+.blog-item .blog-image .blog-over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 60%);
+    text-align: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.blog-item .blog-image img{
+    width: 100%;
+}
+.blog .blog-item{
+    background: rgb(241 241 241);
+    margin-bottom: 23px;
+    transition: all linear .3s;
+}
+.blog .blog-item:hover{
+    filter: drop-shadow(0px 2px 5px rgba(98, 98, 113, 0.43));
+}
+.blog-item .details p{
+    color: rgb(119 119 119);
+    line-height: 30px;
+    font-size: 14px;
+    padding:0;
+    margin: 0;
+}
+.blog-item h3 a{
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(21 21 21);
+    transition: all linear .3s;
+    padding-right: 25px;
+    display: block;
+}
+.blog p{
+    padding-top: 20px;
+    color: rgb(68 68 68);
+    padding-bottom: 10px;
+}
+.blog-item a{
+    font-size: 20px;
+    color: rgb(119 119 119);
+    font-weight: 600;
+    transition: all linear .3s;
+}
+.blog-item .blog-text{
+    padding: 29px 0;
+    margin-left: 8px;
+}
+.blog-item .blog-text .a{
+    font-size:16px ;
+}
+.blog-item .size-adjust{
+    padding: 16px 0;
+}
+.blog-item .blog-over a i{
+    width: 40px;
+    height: 40px;
+    background: rgb(255 255 255);
+    border-radius: 50%;
+    line-height: 40px;
+    color: rgb(73 77 161);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.blog-item:hover .blog-image .blog-over{
+    opacity: 1;
+}
+.blog-item:hover .blog-text a{
+    color: rgb(73 77 161);
+}
+/* end of blog section */
+/* start of footer section */
+.footer{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background: rgb(241 241 241);
+}
+.footer .full-part .logo-part .details p{
+    font-weight: 400;
+    color: rgb(68 68 68);
+    padding-top: 25px;
+    line-height: 24px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer .full-part .logo-part ul{
+    padding-top: 30px;
+}
+.footer .full-part .logo-part ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer .full-part .logo-part ul li a i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(73 77 161);
+    line-height: 39px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(73 77 161);
+    font-size: 20px;
+    margin: 0 2px;
+    transition: all linear .3s;
+}
+.footer .full-part .logo-part ul li a i:hover{
+    background: rgb(73 77 161);
+    color: rgb(255 255 255);
+}
+.footer .full-part .link-part .heading h3{
+    font-size: 20px;
+    color: rgb(21 21 21);
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer .full-part .link-part ul li{
+    list-style: none;
+}
+.footer .full-part .link-part ul li a{
+    color: rgb(68 68 68);
+    text-transform: capitalize;
+    line-height: 38px;
+    font-size: 14px;
+    transition: all linear .3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer .full-part .link-part ul li a:hover{
+    color: rgb(73 77 161);
+    padding-left: 10px;
+}
+.footer .full-part .contact-part h3{
+    font-size: 20px;
+    color: rgb(21 21 21);
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer .full-part .contact-part p{
+    padding-bottom: 20px;
+}
+.footer .full-part .contact-part p a{
+    color: rgb(68 68 68);
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.footer .full-part .photos-part h3{
+    font-size: 20px;
+    color: rgb(21 21 21);
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    padding-left: 27px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer .full-part .photos-part ul{
+    text-align: right;
+}
+.footer .full-part .photos-part ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 0px 5px 10px;
+}
+/* end of footer section */
+/* start of the end section */
+.the-end{
+    text-align: center;
+}
+.the-end p{
+    color: rgb(68 68 68);
+    padding: 20px 0;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+/* end of the end section */

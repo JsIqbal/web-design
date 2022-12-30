@@ -1,0 +1,73 @@
+/* start of common css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    width: 1140px;
+    margin: 0 auto;
+} */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover,a:focus{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+/* end of common css */
+/* start of header section */
+.header{
+    background: url(../images/header-bg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.header .overlay{
+    background: rgba(0, 0, 0,0.5);
+}
+.bg-light {
+    width: 100%;
+    background: none!important;
+}
+.navbar-nav li{
+    margin-left: 25px;
+}
+.navbar-light .navbar-nav .nav-link{
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(255 255 255);
+    transition: all linear .3s;
+}
+.navbar-light .navbar-brand{
+    padding: 0;
+}
+.navbar-light .navbar-brand .icon{
+    background: url(../images/mihome.png);
+    background-position: 0px 0;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-brand:hover .icon{
+
+    background-position: -50px 0;
+
+}
+.navbar-nav li a{
+    padding:0;
+}
+/* end of header section */
